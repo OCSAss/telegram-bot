@@ -9,7 +9,7 @@ from mcrcon import MCRcon
 TOKEN = os.getenv("7866697079:AAH1G1-t3kykuYZs9pRdjpvkJ52i-6JgkRI")  # Telegram токен
 RCON_HOST = os.getenv("skyhaven.sosal.today")  # IP сервера
 RCON_PASSWORD = os.getenv("")  # Пароль RCON
-RCON_PORT = int(os.getenv("25575))  # Порт RCON, по умолчанию 25575
+RCON_PORT = int(os.getenv("RCON_PORT", 25575))  # Порт RCON, по умолчанию 25575
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
